@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Recommandations de voyages</title>
+    <link href="css/custom.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header role="banner">
+      <!-- Skip links-->
+      <div class="pt-1 pb-2">
+        <div class="container">
+          <nav class="" role="navigation" aria-label="Lien d'accès rapide">
+            <p class="mb-0 small text-center text-md-start">
+              <a href="#content">Aller au contenu</a>
+            </p>
+          </nav>
+        </div>
+      </div>
+
+      <!-- Main navigation -->
+      <div class="container"></div>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container align-items-center justify-content-between">
+          <div class="navbar-brand">
+            <img
+              src="assets/images/paper-plane.svg"
+              width="50"
+              height="50"
+              alt="icon-plane"
+              loading="lazy"
+              class="me-2 me-md-3"
+            />
+            <a class="stretched-link" href="#">TravelBloom </a>
+          </div>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div
+            class="collapse navbar-collapse align-items-end"
+            id="navbarSupportedContent"
+          >
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#"
+                  >Accueil</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">À propos de nous</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Articles</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main role="main">
+      <section id="hero" class="hero-section">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-11 col-md-6">
+              <div class="hero-section_content">
+                <h1 class="display-1">
+                  Voyagez selon <br /><span class="exergue">vos envies</span>
+                </h1>
+                <p>
+                  Nos suggestions sur-mesure selon la saison, vos goûts et votre
+                  budget
+                </p>
+                <div class="mb-3">
+                  <label for="go" class="form-label"
+                    >Où souhaitez-vous partir ?</label
+                  >
+                  <input type="text" class="form-control" id="go" />
+                </div>
+                <button class="btn mt-2">
+                  <img src="assets/images/go-btn.jpg" alt="Go" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="faq" class="container home-section">
+        <div class="row">
+          <h2 class="h1 mb-3 mb-md-4">
+            Les questions <span class="exergue">les plus posées</span>
+          </h2>
+          <div class="col-12 col-md-6">
+            <div class="accordion" id="accordionExample">
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Qui sommes-nous ?
+                  </button>
+                </h3>
+                <div
+                  id="collapseOne"
+                  class="accordion-collapse collapse show"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Cercle des Voyages est une agence de voyage spécialiste du
+                      voyage sur mesure.
+                    </p>
+                    <p>
+                      Co-concevez avec nos conseillers experts le voyage qui
+                      vous ressemble, celui que vous allez vivre intensément.
+                      Les voyages personnalisés que nous concevons avec vous
+                      sont uniques, adaptés à vos envies et votre budget, pour
+                      vivre une expérience inoubliable à destination. Depuis
+                      plus de 25 ans, Cercle des Voyages propose des voyages de
+                      qualité aux 4 coins du monde, vers plus de 90 destinations
+                      sur les 5 continents.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Quelles sont les garanties TravelBloom ?
+                  </button>
+                </h3>
+                <div
+                  id="collapseTwo"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      TravelBloom est une agence spécialiste du voyage sur
+                      mesure depuis 25 ans. Membre du SETO, nous garantissons
+                      des voyages de qualité et un accompagnement personnalisé
+                      avant, pendant et après votre voyage.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Pourquoi voyager avec nous ?
+                  </button>
+                </h3>
+                <div
+                  id="collapseThree"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Tous nos conseillers sont des experts de leur destination,
+                      ils en sont originaires ou bien y ont vécu pendant
+                      plusieurs années. Ils connaissent donc parfaitement le
+                      pays où vous souhaitez voyager. Ils sont ainsi les mieux
+                      placés pour vous proposer les meilleures expériences sur
+                      place, expériences qui seront parfaitement adaptées à vos
+                      envies.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h3 class="accordion-header">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    Comment co-construire votre voyage sur-mesure avec un
+                    spécialiste ?
+                  </button>
+                </h3>
+                <div
+                  id="collapseFour"
+                  class="accordion-collapse collapse"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div class="accordion-body">
+                    <p>
+                      Vous souhaitez prendre contact avec l’un de nos
+                      conseillers spécialistes ? Cliquez sur le bouton bleu «
+                      Co-Concevez votre voyage » en haut à droite de cette page
+                      et laissez vous guider ! Donnez nous un maximum
+                      d’informations sur vos envies de voyage et nous vous
+                      recontacterons dans les meilleurs délais pour faire
+                      connaissance et commencer à définir votre projet de
+                      voyage. Nous pouvons échanger par téléphone, en visio, par
+                      email et bien entendu dans le cadre d’une entrevue dans
+                      nos locaux au cœur de Paris, avenue de l’Opéra.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 offset-md-1 col-md-5">
+            <div class="mt-4 mt-md-0">
+              <figure role="group" aria-label="©Jivan Garcha - Unsplash">
+                <img
+                  src="assets/images/japon.jpg"
+                  alt="Illustration n°1"
+                  style="max-width: 100%"
+                />
+
+                <figcaption class="small mt-1 text-center">
+                  ©Jivan Garcha - Unsplash
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="aboutus" class="home-section home-section--bg">
+        <div class="container">
+          <div class="row justify-content-md-center">
+            <div class="col-12 col-md-6 text-center">
+              <div class="aboutus-lead">
+                <h2 class="h1 mb-3 mb-md-4">
+                  À propos de <span class="exergue">nous</span>
+                </h2>
+                <p class="lead">
+                  Nous sommes passionnés par le voyage, genre vraiment
+                  complètement fada (merci de lire ce texte avec un accent du
+                  sud). Si nous n'avions pas de maison, on aimerait vivre dans
+                  un <a href="https://fr.wikipedia.org/wiki/Avion">avion</a>, et
+                  même en y repensant, on va peut-être d'ailleurs vendre la
+                  maison pour acheter un avion et le mettre dans le jardin.
+                  C'est ça la vraie passion qui nous anime !
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="container home-section">
+        <div class="row">
+          <div class="col-12 col-md-9">
+            <h2 class="h1 mb-3 mb-md-4">
+              Contactez-<span class="exergue">nous</span>
+            </h2>
+
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputName" class="form-label">Nom</label>
+                <input type="text" class="form-control" id="exampleInputName" />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Email</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputAdress" class="form-label"
+                  >Adresse</label
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  id="exampleInputAdress"
+                />
+              </div>
+
+              <div class="mb-3">
+                <label for="exampleInputMessage" class="form-label"
+                  >Message</label
+                >
+                <textarea
+                  rows="5"
+                  class="form-control"
+                  id="exampleInputMessage"
+                ></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary mt-2">
+                Soumettre
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section id="testimonials" class="home-section home-section--dark">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 offset-md-1 col-md-7 text-center text-md-start">
+              <h2 class="h1 mb-3 mb-md-4">
+                Ils ont <span class="exergue">aimé</span>
+              </h2>
+            </div>
+          </div>
+          <div class="row justify-content-md-center">
+            <div class="col-12 offset-md-1 col-md-7 text-center text-md-start">
+              <p class="blockquote">
+                &laquo;&nbsp;J'ai adoré ce voyage en petit groupe (9), très
+                personnalisé, avec un guide très intéressant. Loin des
+                excursions sans intérêts des clubs vacances, au contact des
+                populations et avec une réelle authenticité, dans le respect de
+                la population et de leurs mœurs. Tout était bien préparé et de
+                belles surprises de découvertes nous attendaient tous les jours.
+                Un vrai contact avec notre agence locale toujours réactive. une
+                véritable immersion. Merci&nbsp;&raquo;
+                <br />
+                <span class="blockquote-footer">Patrick et Bob</span>
+              </p>
+            </div>
+            <div class="col-12 offset-md-1 col-md-3">
+              <div class="blockquote-img text-center text-md-start">
+                <img src="assets/images/patrickbob.jpeg" alt="" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="findus" class="container home-section">
+        <div class="row justify-content-md-center">
+          <div class="col col-md-7 contact_intro text-center">
+            <h2 class="h1 mb-3 mb-md-4">
+              Venez <span class="exergue">nous voir</span>
+            </h2>
+
+            <p>
+              Avec 1800 m² répartis sur 3 étages ouverts au public, TravelBloom
+              Islands est le plus grand espace de
+              <a href="https://fr.wikipedia.org/wiki/France">France</a> consacré
+              entièrement au voyage. C'est dans ce cadre exceptionnel que nos
+              vendeurs, spécialisés par destination, vous livreront leurs
+              conseils judicieux pour organiser au mieux votre prochain périple.
+              Week-ends urbain, échappée culturelle ou farniente, voyage au long
+              cours, en solo ou en famille, quelle que soit la solution choisie,
+              votre voyage vous ressemblera.
+            </p>
+          </div>
+        </div>
+        <div class="row contact_row">
+          <div class="col-12 col-lg-5">
+            <div class="contact_info">
+              <div class="contact_info_item">
+                <table class="contact_table">
+                  <tbody>
+                    <tr>
+                      <th colspan="2">Nos coordonnées</th>
+                    </tr>
+                    <tr>
+                      <td>Adresse :</td>
+                      <td>1 Rue des Voyageurs, 95800 Cergy, France</td>
+                    </tr>
+                    <tr>
+                      <td>Téléphone :</td>
+                      <td>+33 02 22 22 22 22</td>
+                    </tr>
+                    <tr>
+                      <td>Email :</td>
+                      <td>travelbloom.levoyagecsuper@yopmail.com</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="contact_info_item">
+                <p><strong>En transport :</strong></p>
+                <ul>
+                  <li>Métro : Pyramides ou Quatre-Septembre</li>
+                  <li>Velib : 1 rue Chabanais ou 71 rue de Richelieu</li>
+                  <li>Voiture : Parking Bourse</li>
+                </ul>
+              </div>
+
+              <div class="contact_info_item">
+                <p>
+                  <strong
+                    >Nos conseillers joignables par téléphone de 11h30 à
+                    12h.</strong
+                  >
+                </p>
+
+                <p>
+                  Pour éviter toute attente et échanger confortablement avec
+                  l’un ou l'une de nos conseillères spécialistes, nous vous
+                  recommandons de prendre rendez-vous par téléphone,
+                  visio-conférence ou en agence, sur le créneau horaire de votre
+                  choix.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-7">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2614.939679453992!2d2.0342271!3d49.0497705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e6f490bcde400b%3A0xcb7194cb2f5a8713!2s1%20Rue%20des%20Voyageurs%2C%2095800%20Cergy!5e0!3m2!1sfr!2sfr!4v1771592089781!5m2!1sfr!2sfr"
+              width="800"
+              height="600"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title=""
+            ></iframe>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo" class="footer">
+      <div class="footer--light">
+        <div class="container footer__container">
+          <div class="row footer__row">
+            <div class="col-12 col-md-8">
+              <p>
+                TravelBloom est une agence de voyage spécialisée dans le
+                sur-mesure, appartenant au groupe TravelBloom Corporate. Grâce à
+                notre expertise et notre passion du voyage, nous sommes là pour
+                vous aider à réaliser le voyage de vos rêves. Notre équipe est à
+                votre écoute pour créer le voyage qui vous ressemble.
+              </p>
+            </div>
+            <!-- .col -->
+
+            <div class="col-12 col-md-4">
+              <ul class="navbar-nav gap-2 flex-row flex-md-row-reverse">
+                <li>
+                  <a href="#" class="btn btn-icon btn-social btn-twitter"
+                    ><span class="visually-hidden">Twitter</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="btn btn-icon btn-social btn-facebook"
+                    ><span class="visually-hidden">Facebook</span></a
+                  >
+                </li>
+                <li>
+                  <a href="#" class="btn btn-icon btn-social btn-instagram"
+                    ><span class="visually-hidden">Instagram</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <!-- .col -->
+          </div>
+          <!-- .row -->
+
+          <div class="row footer__row">
+            <div class="col-12 col-md-4 footer__col">
+              <p class="footer-title lead">Moyens de paiement acceptés</p>
+              <img src="assets/images/ancv.svg" alt="cb" />
+              <img src="assets/images/MasterCard.svg" alt="cb" />
+              <img src="assets/images/Visa.svg" alt="cb" />
+            </div>
+            <!-- .col -->
+
+            <div class="col-12 col-md-4 footer__col">
+              <p class="footer-title lead">À propos</p>
+              <ul class="footer-list">
+                <li>
+                  <a href="#">Qui sommes-nous ?</a>
+                </li>
+                <li>
+                  <a href="#">TravelBloom Academy</a>
+                </li>
+                <li>
+                  <a href="#">Recrutement</a>
+                </li>
+                <li>
+                  <a href="#">Adhérer au réseau</a>
+                </li>
+                <li>
+                  <a href="#">Avis clients</a>
+                </li>
+              </ul>
+            </div>
+            <!-- .col -->
+            <div class="col-12 col-md-4 footer__col">
+              <p class="footer-title lead">Informations légales</p>
+              <ul class="footer-list">
+                <li>
+                  <a href="#">Politique de confidentialité</a>
+                </li>
+                <li>
+                  <a href="#">Mentions légales</a>
+                </li>
+                <li>
+                  <a href="#">Conditions générales de vente</a>
+                </li>
+                <li>
+                  <a href="#">Accessibilité : non conforme</a>
+                </li>
+              </ul>
+            </div>
+            <!-- .col -->
+          </div>
+          <!-- .row -->
+        </div>
+      </div>
+      <!-- .footer--light -->
+      <div class="footer--dark">
+        <div class="container footer__container">
+          <div class="row footer__row">
+            <p class="footer-copyright">
+              © 2026 TravelBloom. Tous droits réservés.
+            </p>
+          </div>
+          <!-- .row -->
+        </div>
+      </div>
+      <!-- .container -->
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/boosted@5.3.8/dist/js/boosted.bundle.min.js"
+      integrity="sha384-lSjE7ZAWc1Wiua5r2jyHbPL07FiKkHPWCXugD3qTq4o4M4YZQzLTrDF1CXrjxU/m"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

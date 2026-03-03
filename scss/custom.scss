@@ -1,0 +1,232 @@
+// Custom.scss
+// Option A: Include all of Boosted
+
+// Include any default variable overrides here (though functions won’t be available)
+
+@import "../node_modules/boosted/scss/boosted";
+
+// General styles
+p {
+  line-height: 1.7;
+}
+
+ul {
+  li {
+    margin-bottom: 0.5rem;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  .exergue {
+    font-style: italic;
+    color: #f16e00;
+  }
+}
+
+// Navigation styles
+.navbar-brand {
+  align-items: center;
+
+  .stretched-link {
+    text-decoration: none;
+  }
+}
+
+.navbar {
+  background-color: #00143d;
+
+  a {
+    color: #ffffff;
+  }
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.active {
+  &::before {
+    content: none;
+  }
+}
+
+.nav-item {
+  margin-bottom: 0;
+}
+
+.navbar-toggler-icon {
+  background-color: #ffffff;
+}
+
+// Hero section styles
+$hero-section-height: 50vh;
+$hero-section-height-md: 80vh;
+
+.hero-section {
+  position: relative;
+  height: $hero-section-height;
+
+  @include media-breakpoint-up(md) {
+    height: $hero-section-height-md;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)),
+      url("../assets/images/paris.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &_content {
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    top: calc($hero-section-height / 2);
+    transform: translateY(-50%);
+
+    @include media-breakpoint-up(md) {
+      top: calc($hero-section-height-md / 2);
+    }
+  }
+}
+
+// Homepage Layout
+.home-section {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+
+  &--dark {
+    background-color: #00143d;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+
+    & > * {
+      color: #ffffff;
+    }
+  }
+
+  &--bg {
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    background-image: url(../assets/images/newyork.jpg);
+    background-position: center;
+    background-size: cover;
+
+    @include media-breakpoint-up(md) {
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+    }
+  }
+}
+
+// FAQ section styles
+.accordion-button {
+  font-size: 1.35rem;
+}
+
+// About us section styles
+.aboutus-lead {
+  border-radius: 3rem;
+  background-color: #ffffff;
+  padding: 2rem;
+}
+
+// Contact section styles
+.contact_intro {
+  margin-bottom: 4rem;
+}
+
+.contact_row {
+  overflow: hidden;
+  border-radius: 3rem;
+  background-color: #f3f4f8;
+}
+
+.contact_info {
+  padding: 3rem;
+}
+
+.contact_info_item {
+  margin-bottom: 2.5rem;
+}
+
+.contact_table {
+  td,
+  th {
+    padding: 0.5rem;
+  }
+}
+
+// Testimonials section styles
+.blockquote-img {
+  img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+  }
+}
+
+// Footer styles
+.footer {
+  > *,
+  a {
+    color: white;
+  }
+
+  &--light {
+    background-color: #00143d;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+
+  &--dark {
+    background-color: #000e2b;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  &__row:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+
+  &__col:not(:last-child) {
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+.footer-title {
+  font-weight: 700;
+}
+
+.footer-list {
+  list-style-type: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 1rem;
+  }
+
+  a {
+    text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:focus-visible {
+      text-decoration: underline;
+    }
+  }
+}
+
+.footer-copyright {
+  margin-bottom: 0;
+}
