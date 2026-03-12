@@ -60,15 +60,15 @@ h6 {
 }
 
 // Hero section styles
-$hero-section-height: 50vh;
-$hero-section-height-md: 80vh;
 
 .hero-section {
   position: relative;
-  height: $hero-section-height;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 
   @include media-breakpoint-up(md) {
-    height: $hero-section-height-md;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 
   &::after {
@@ -87,12 +87,12 @@ $hero-section-height-md: 80vh;
     text-align: center;
     position: relative;
     z-index: 1;
-    top: calc($hero-section-height / 2);
-    transform: translateY(-50%);
+  }
+}
 
-    @include media-breakpoint-up(md) {
-      top: calc($hero-section-height-md / 2);
-    }
+#btn-go {
+  &:hover {
+    border-color: transparent;
   }
 }
 
@@ -137,6 +137,11 @@ $hero-section-height-md: 80vh;
   padding: 2rem;
 }
 
+// Form contact
+.asterisque {
+  color: #f16e00;
+}
+
 // Contact section styles
 .contact_intro {
   margin-bottom: 4rem;
@@ -149,7 +154,11 @@ $hero-section-height-md: 80vh;
 }
 
 .contact_info {
-  padding: 3rem;
+  padding: 1rem;
+
+  @include media-breakpoint-up(md) {
+    padding: 3rem;
+  }
 }
 
 .contact_info_item {
@@ -160,6 +169,11 @@ $hero-section-height-md: 80vh;
   td,
   th {
     padding: 0.5rem;
+    display: block;
+
+    @include media-breakpoint-up(md) {
+      display: table-cell;
+    }
   }
 }
 

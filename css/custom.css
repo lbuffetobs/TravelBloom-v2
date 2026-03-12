@@ -13989,11 +13989,13 @@ h6 .exergue,
 
 .hero-section {
   position: relative;
-  height: 50vh;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 @media (min-width: 768px) {
   .hero-section {
-    height: 80vh;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
   }
 }
 .hero-section::after {
@@ -14009,13 +14011,10 @@ h6 .exergue,
   text-align: center;
   position: relative;
   z-index: 1;
-  top: 25vh;
-  transform: translateY(-50%);
 }
-@media (min-width: 768px) {
-  .hero-section_content {
-    top: 40vh;
-  }
+
+#btn-go:hover {
+  border-color: transparent;
 }
 
 .home-section {
@@ -14054,6 +14053,10 @@ h6 .exergue,
   padding: 2rem;
 }
 
+.asterisque {
+  color: #f16e00;
+}
+
 .contact_intro {
   margin-bottom: 4rem;
 }
@@ -14065,7 +14068,12 @@ h6 .exergue,
 }
 
 .contact_info {
-  padding: 3rem;
+  padding: 1rem;
+}
+@media (min-width: 768px) {
+  .contact_info {
+    padding: 3rem;
+  }
 }
 
 .contact_info_item {
@@ -14075,6 +14083,13 @@ h6 .exergue,
 .contact_table td,
 .contact_table th {
   padding: 0.5rem;
+  display: block;
+}
+@media (min-width: 768px) {
+  .contact_table td,
+  .contact_table th {
+    display: table-cell;
+  }
 }
 
 .blockquote-img img {
